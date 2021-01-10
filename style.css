@@ -52,3 +52,7 @@ body{
         padding-left: 650px;
         border-bottom: none;
     }
+    @media(max-width: 1300px){
+    .headline{
+        padding-left: 450px;
+    }
