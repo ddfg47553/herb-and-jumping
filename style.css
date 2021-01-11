@@ -49,7 +49,7 @@ body{
     }
     .headline{
         display: inline;
-        padding-left: 650px;
+        padding-left: 600px;
         border-bottom: none;
     }
     @media(max-width: 1300px){
