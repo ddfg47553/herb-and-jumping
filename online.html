@@ -2,31 +2,52 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css"> 
-    <title>허브 앤 점핑</title>
+    <title>허브 </title>
     <meta charset="utf-8">
     <style>
         .photo{
-            padding-left: 60px;
+            padding-left: 40px;
         }
         img{
             padding: 10px;
         }
-        @media(max-width: 1300px){
-            img{
-                width: 210px;
-            }
-        .photo{
-                padding-left: 80px;
-            }
-        }        
 
+        @media(max-width: 800px){
+            div{
+                display: none;
+            }
+        }
+        .blink {
+        animation: blinker 3s linear infinite;
+        color: green;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+        }
+        @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+        .morning{
+            padding-left: 45px;
+        }
+        .standard{
+            padding-left: 85px;
+        }
+        .speed{
+            padding-left: 130px;
+        }
+        .body_speed{
+            padding-left: 110px;
+        }
   </style>
 </head>
 <body>
     <div class="head">
         <h4 class="login" style="color:white">로그인</h4>
-        <a href="main.html"><img class="title" src="https://i.esdrop.com/d/WgvX8cWiHs.png"width="40%"></a>
-        <br><br>
+        <a href="main.html"><img class="title" src="C:\Users\김준호\Desktop\web\img\title.png"width="40%"></a>
+        <br>
     </div>
   <div id="grid">
     <ul>
@@ -39,18 +60,28 @@
             </h3>
         </div>
         <div class="list">
-            <li><h2><a href="club.html">클럽 소개</a></h2></li>
-            <li><h2><a href="online.html" style="color:red">온라인 관리</a></h2></li>
+            <li><h2><a href="club.html" >클럽 소개</a></h2></li>
+            <li><h2><a href="online1.html" style="color:red">온라인 관리</a></h2></li>
             <li><h2><a href="qna.html">상담 문의</a></h2></li>
             <li><h2><a href="rute.html">오시는 길</a></h2></li>
         </div>
     </ul>
-    <div>
-        <img src="https://i.esdrop.com/d/ro6HUMnR8Y.png" width="310px" class="photo"> 
-        <img src="https://i.esdrop.com/d/DQXuFfDwx2.png" width="300px">
-        <img src="https://i.esdrop.com/d/5rALB2eZO8.png" width="300px">
-        <img src="https://i.esdrop.com/d/UFxdgeJKuN.png" width="317px" >
-    </div>
+    <div id="article">
+      <div class="picture">
+          <img src="https://i.esdrop.com/d/Suce98AjHX.png" width="300px" class="photo">
+          <img src="https://i.esdrop.com/d/BA3vvia8EM.png" width="300px">
+          <img src="https://i.esdrop.com/d/4WVMy57O7w.png" width="300px">
+          <img src="https://i.esdrop.com/d/g2IZPCqHt7.png" width="300px" >
+          <div class="blink">
+              <strong class="morning">♡영양 듬뿍♡ 건강한 아침식사</strong>
+              <strong class="standard">한 달 기본 프로그램</strong>
+              <strong class="speed">한 달 스피드 프로그램</strong>
+              <strong class="body_speed">단기간 상&middot;하체 프로그램</strong>
+
+          </div>
+      
+  </div>
+</div>
   </div>
   </body>
   </html>
