@@ -10,12 +10,12 @@ body{
     color:black;
     font-size:70px;
     text-align: center;
-    border-bottom:5px solid grey;
+    border-bottom:5px solid black;
     margin:0;
     padding:20px;
     }
     ul{
-    border-right:5px solid grey;
+    border-right:5px solid black;
     width:160px;
     margin:0;
     padding:20px;
@@ -47,12 +47,16 @@ body{
         border: black 3px solid;
         padding-left: 12px;
     }
-    .headline{
-        display: inline;
-        padding-left: 600px;
-        border-bottom: none;
+    .title{
+        padding: 0;
+        padding-left: 480px;
     }
     @media(max-width: 1300px){
-    .headline{
-        padding-left: 450px;
+        .photo{
+            padding-left: 20px;
+            
+        }
+        img{
+            width: 220px;
+        }
     }
